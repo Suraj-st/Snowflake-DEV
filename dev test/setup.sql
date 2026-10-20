@@ -1,0 +1,16 @@
+
+
+
+
+-- DROP SECRET git_secret_example;
+-- DROP API INTEGRATION git_api_integration_example;
+
+SELECT *
+ FROM SNOWFLAKE.ACCOUNT_USAGE.QUERY_HISTORY
+limit 100
+;
+
+SHOW GIT BRANCHES IN RAW.ANALYTICS."Snowflake-DEV";
+
+ALTER GIT REPOSITORY RAW.ANALYTICS."Snowflake-DEV"
+FETCH;
